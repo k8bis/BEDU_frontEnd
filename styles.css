@@ -2,7 +2,8 @@ body{
     background-color: #fffbf7;
 }
 h1{
-    color:#025157;
+  font-size: 60px;
+  color:#025157;
 }
 .center{
     display:block;
@@ -15,30 +16,31 @@ p{
     color: #46484c;
 }
 li {
-    display:inline;
+  display: inline;
+  margin: 0 25px 0;
 }
 button{
     color:#fff;
     background-color: #025157;
 }
 .main{
-    margin-top: 140px;
+    margin-top: 285px;
     text-align: center;
 }
-.fijo{
-  position:fixed;
-   top:0;
-   left: 0;
-   right:0;
-   background-color: #fffbf7;
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
 }
 
 .header {
-    margin: 40px 20px 20px 0;
-    font-size: 0;
-    height: 45px;
-    font-family: sans-serif;
-  }
+  margin: 40px 20px 0;
+  font-size: 0;
+  font-family: sans-serif;
+}
+
 .header > * {
     display:inline-block;
     font-size: 16px;
@@ -47,7 +49,7 @@ button{
     height: 100%;
 }
 .navbar{
-    width: 70%;
+/*    width: 70%;*/
     text-align: center;
     color: #025157;
     font-weight: 500;
@@ -144,4 +146,89 @@ button{
 .brands {
   flex: 2;
   padding-right: 100px;
+}
+
+.features{
+  display:grid;
+  height: 660px;
+ 
+  grid-template: repeat( 2, 1fr) / repeat( 2, 1fr);
+}
+
+.features-caja{
+  display: flex;
+  background-color: #064d49;
+  padding: 5% 15%;
+}
+
+.features-article{
+  background-color: #fff;
+}
+.feautures-img{
+  background-color: #fff;
+
+}
+
+@media( max-width: 575px ){
+/*  .navbar,
+  .actions {
+    display: none;
+  }*/
+
+  h1{
+    font-size: 30px;
+  }
+
+  .main{
+    margin-top: 120px;
+  }
+  
+  .banner > img {
+    width: 100%;
+  }
+
+  .publish > form{
+    flex-direction: column;
+  }
+
+  .publish > form > div{
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish > form > div > input{
+    width: 65%;
+  }
+  .promo{
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .video-promo{
+    width: 100%;
+  }
+
+  .publish{
+    margin-top: 10px;
+  }
+  publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .features{
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .feautures-img{
+    display: none;
+  }
+}
+
+@media( min-width: 576px) and (max-width:767px ){
+  body{
+    background-color: #a1d683;
+  }
+  
 }
