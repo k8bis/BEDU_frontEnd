@@ -8,8 +8,9 @@
         <title>Matcha</title>
         <!-- CSS only -->
         <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="output.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fffbf7;">
@@ -37,7 +38,7 @@
                             <a class="nav-link" href="#">Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
+                            <a class="nav-link" href="aboutUs.html">About us</a>
                         </li>
                     </ul>
     
@@ -53,9 +54,9 @@
             <!--Esto es lo que se vera en el navegador web-->
             <h1>Buid your blog. Build your business.</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <strong>Optio nostrum beatae recusandae</strong> aliquid dignissimos ut omnis repellendus accusantium ipsam molestias minima temporibus cum reprehenderit, voluptatem porro dolore, tenetur magnam similique.</p>
-            <form action="">
-                <input type="email" name="" id="">
-                <button type="submit">Try it now</button>
+            <form class="signup-form">
+                <input class="input-main" type="email" placeholder="Enter email address">
+                <button type="submit" class="texto-boton">Try it now</button>
             </form>
             <figure class="banner">
                 <img src="img/capterra.png" class="center"> 
@@ -311,10 +312,79 @@
                 </div>
               </section>
             </article>
+        </section>
+        <section class="container blog">
+            <div class="row">
+              <div class="col">
+                <h2 class="title">Learn how to grow your ecommerce business.</h2>
+                <article class="process-list">
+                  <div class="process">
+                    <div class="process-icon">
+                      <img src="./icons/build.png" alt="Build icon" />
+                    </div>
+                    <div class="process-description">
+                      <h3>Build</h3>
+                      <p>and scale your ecommerce store</p>
+                    </div>
+                  </div>
+                  <div class="process">
+                    <div class="process-icon">
+                      <img src="./icons/attract.png" alt="Attract icon" />
+                    </div>
+                    <div class="process-description">
+                      <h3>Attract</h3>
+                      <p>your target audience and grow site traffic</p>
+                    </div>
+                  </div>
+                  <div class="process">
+                    <div class="process-icon">
+                      <img src="./icons/convert.png" alt="Convert icon" />
+                    </div>
+                    <div class="process-description">
+                      <h3>Convert</h3>
+                      <p>readers to subscribers and customers</p>
+                    </div>
+                  </div>
+                </article>
+                <button>Read the blog</button>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://getmatcha.com/wp-content/uploads/2019/03/david-marcu-114194-1052x699.jpg"
+                    class="card-img-top"
+                    alt="Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands
+                    </h5>
+                    <p class="metadata">
+                      <strong class="category">Performance Blogging </strong>
+                      <strong class="read-time">• 21 mins read</strong>
+                    </p>
+                    <p class="card-text">
+                      Table of ContentsWhy Ecommerce Businesses Need a Blog in
+                      2020Document Your Ecommerce Blog StrategyPublication: How to Create
+                      High-Performing Blog ContentDistribution:...
+                      <span class="read-more">+ <a>Read More</a></span>
+                    </p>
+                    <div class="author">
+                      <img
+                        src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+                        alt="Shauna Ward"
+                      />
+                      <p>Shauna Ward</p>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+              <div class="col"></div>
+            </div>
           </section>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script> 
     </body>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script> 
 </html>
